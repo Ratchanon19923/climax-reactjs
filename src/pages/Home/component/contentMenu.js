@@ -14,27 +14,27 @@ function contentMenu() {
         <>
             <Row justify="center" align="middle">
                 <Col span={21}>
-                    <a>
+                    <a href="/">
                         <img src={menuGame} className={css`width:100% ; `} alt="..." />
                     </a>
                 </Col>
                 <Col span={11}>
-                    <a>
+                    <a href="/">
                         <img src={menuSlot} className={css`width:100%;  `} alt="..." />
                     </a>
                 </Col>
                 <Col span={11}>
-                    <a>
+                    <a href="/">
                         <img src={menuSport} className={css`width:100%;  `} alt="..." />
                     </a>
                 </Col>
                 <Col span={11}>
-                    <a>
+                    <a href="/">
                         <img src={menuCasino} className={css`width:100%;  `} alt="..." />
                     </a>
                 </Col>
                 <Col span={11}>
-                    <a>
+                    <a href="/">
                         <img src={menuLotto} className={css`width:100%;`} alt="..." />
                     </a>
                 </Col>

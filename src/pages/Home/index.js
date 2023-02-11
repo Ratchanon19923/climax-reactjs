@@ -1,5 +1,4 @@
 import React from 'react'
-import { css } from '@emotion/css'
 import { Alert, Col, Row } from 'antd';
 import Marquee from 'react-fast-marquee';
 import CarouselCard from "./component/carouselCard";

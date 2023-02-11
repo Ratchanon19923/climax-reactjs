@@ -1,6 +1,6 @@
 import React from 'react'
 import Percent from "../../assets/images/percent.png"
-import { Col, Row, Button } from 'antd';
+import { Col, Row } from 'antd';
 import { css } from '@emotion/css'
 import Promotion1 from '../../assets/images/promotion1.png'
 import Promotion2 from '../../assets/images/promotion2.png'
@@ -35,24 +35,24 @@ function index() {
                 </div>
                 <Row justify="center" align="middle" style={{ zIndex: 1 }}>
                     <Col xs={18} sm={15} lg={8} xl={6}>
-                        <a>
+                        <a href="/">
                             <img src={Promotion1} className={css`width:100%;  `} alt="..." />
                         </a>
                     </Col>
                     <Col xs={18} sm={15} lg={8} xl={6}>
-                        <a>
+                        <a href="/">
                             <img src={Promotion2} className={css`width:100%;  `} alt="..." />
                         </a>
                     </Col>
                 </Row>
                 <Row justify="center" align="middle" className="mb-5" >
                     <Col xs={18} sm={15} lg={8} xl={6}>
-                        <a>
+                        <a href="/">
                             <img src={Promotion1} className={css`width:100%;  `} alt="..." />
                         </a>
                     </Col>
                     <Col xs={18} sm={15} lg={8} xl={6}>
-                        <a>
+                        <a href="/">
                             <img src={Promotion2} className={css`width:100%;`} alt="..." />
                         </a>
                     </Col>
