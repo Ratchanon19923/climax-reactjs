@@ -49,7 +49,7 @@ function Menu({ isOpen, onChange }) {
 
 
             <button className="btn-berDownload">
-                <img src={BarDownload} className="image-berDownload" alt="..." href="#" />
+                <img src={BarDownload} className="image-berDownload" alt="..." href="/" />
                 <p >ติดตั้งแอพพลิเคชั่น</p>
             </button>
         </div>

@@ -27,25 +27,25 @@ function HeaderNav() {
             <div className="pc">
               <div className="card-icon-out">
                 <div className="card-icon-container mx-2">
-                  <a href="#">
+                  <a href="/">
                     <img className="img-icon" src={IconWallet} alt="..." />
                   </a>
                   <p className="text-light">กระเป๋า</p>
                 </div>
                 <div className="card-icon-container mx-2">
-                  <a href="#">
+                  <a href="/">
                     <img className="img-icon" src={IconDeposit} alt="..." />
                   </a>
                   <p className="text-light">ฝากเงิน</p>
                 </div>
                 <div className="card-icon-container mx-2">
-                  <a href="#">
+                  <a href="/">
                     <img className="img-icon" src={IconGame} alt="..." />
                   </a>
                   <p className="text-light">เล่นเกมส์</p>
                 </div>
                 <div className="card-icon-container mx-2">
-                  <a href="#">
+                  <a href="/">
                     <img className="img-icon" src={IconWithdraw} alt="..." />
                   </a>
                   <p className="text-light">ถอนเงิน</p>
