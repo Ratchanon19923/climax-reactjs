@@ -14,28 +14,53 @@ function contentMenu() {
         <>
             <Row justify="center" align="middle">
                 <Col span={21}>
-                    <a href="/">
-                        <img src={menuGame} className={css`width:100% ; `} alt="..." />
+                    <a href="/" >
+                        <img src={menuGame} className={css`width:100% ; 
+                        &:hover,
+                        :focus {
+                          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                          transform: translateY(-0.50em);
+                        }`} alt="..." />
                     </a>
                 </Col>
                 <Col span={11}>
                     <a href="/">
-                        <img src={menuSlot} className={css`width:100%;  `} alt="..." />
+                        <img src={menuSlot} className={css`width:100% ; 
+                        &:hover,
+                        :focus {
+                          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                          transform: translateY(-0.50em);
+                        }`} alt="..." />
                     </a>
                 </Col>
                 <Col span={11}>
                     <a href="/">
-                        <img src={menuSport} className={css`width:100%;  `} alt="..." />
+                        <img src={menuSport} className={css`width:100% ; 
+                        &:hover,
+                        :focus {
+                          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                          transform: translateY(-0.50em);
+                        }`} alt="..." />
                     </a>
                 </Col>
                 <Col span={11}>
                     <a href="/">
-                        <img src={menuCasino} className={css`width:100%;  `} alt="..." />
+                        <img src={menuCasino} className={css`width:100% ; 
+                        &:hover,
+                        :focus {
+                          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                          transform: translateY(-0.50em);
+                        }`} alt="..." />
                     </a>
                 </Col>
                 <Col span={11}>
                     <a href="/">
-                        <img src={menuLotto} className={css`width:100%;`} alt="..." />
+                        <img src={menuLotto} className={css`width:100% ; 
+                        &:hover,
+                        :focus {
+                          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                          transform: translateY(-0.50em);
+                        }`} alt="..." />
                     </a>
                 </Col>
                 <Col span={21}>

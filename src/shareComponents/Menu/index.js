@@ -1,5 +1,6 @@
 import React from "react";
 import "./menu.css"
+import { Button } from 'antd';
 import { MdClose } from "react-icons/md";
 import Logo from "../../assets/images/logo.png"
 import BarDownload from "../../assets/images/barDownload.png"
@@ -48,10 +49,10 @@ function Menu({ isOpen, onChange }) {
             </div>
 
 
-            <button className="btn-berDownload">
+            <Button className="btn-berDownload">
                 <img src={BarDownload} className="image-berDownload" alt="..." href="/" />
                 <p >ติดตั้งแอพพลิเคชั่น</p>
-            </button>
+            </Button>
         </div>
     );
 }
