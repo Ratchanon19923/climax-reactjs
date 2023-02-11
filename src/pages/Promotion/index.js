@@ -27,11 +27,11 @@ function index() {
 
                 </div>
                 <div className="nav-con">
-                    <a className="nav-text nav-link" href="#">ทั้งหมด</a>
-                    <a className="nav-text nav-link" href="#">กีฬา</a>
-                    <a className="nav-text nav-link" href="#">คาสิโน</a>
-                    <a className="nav-text nav-link" href="#">สล็อต</a>
-                    <a className="nav-text nav-link" href="#">หวย</a>
+                    <a className="nav-text nav-link" href="/">ทั้งหมด</a>
+                    <a className="nav-text nav-link" href="/">กีฬา</a>
+                    <a className="nav-text nav-link" href="/">คาสิโน</a>
+                    <a className="nav-text nav-link" href="/">สล็อต</a>
+                    <a className="nav-text nav-link" href="/">หวย</a>
                 </div>
                 <Row justify="center" align="middle" style={{ zIndex: 1 }}>
                     <Col xs={18} sm={15} lg={8} xl={6}>
