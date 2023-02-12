@@ -167,6 +167,7 @@
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    padding: 8px 10px;
 }
 
 
@@ -178,7 +179,7 @@
         align-items: center;
         background-color: #0000005b;
         opacity: 0.8;
-        width: 65%;
+        width: 70%;
         height: 40px;
         margin: 5px auto 20px auto;
         border-radius: 10px;
@@ -233,7 +234,7 @@
         align-items: center;
         background-color: #0000005b;
         opacity: 0.8;
-        width: 60%;
+        width: 65%;
         height: 40px;
         margin: 5px auto 20px auto;
         border-radius: 10px;
@@ -248,7 +249,7 @@
         align-items: center;
         background-color: #0000005b;
         opacity: 0.8;
-        width: 70%;
+        width: 65%;
         height: 40px;
         margin: 5px auto 20px auto;
         border-radius: 10px;
@@ -266,5 +267,12 @@
         height: 40px;
         margin: 5px auto 20px auto;
         border-radius: 10px;
+    }
+
+    .nav-text {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        padding: 8px 10px;
     }
 }
