@@ -16,7 +16,7 @@ function HeaderNav() {
 
       <div className="navbar p-0" >
         <div className="container-fluid ">
-          <div className="d-flex">
+          <div className="d-flex my-3">
             <a href="/">
               <img src={Logo} className="img-logo" alt="..." />
             </a>
