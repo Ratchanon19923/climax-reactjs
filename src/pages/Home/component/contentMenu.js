@@ -63,6 +63,7 @@ function contentMenu() {
                         }`} alt="..." />
                     </a>
                 </Col>
+
                 <Col span={21}>
                     <Button
                         className={css`width:100%;
@@ -70,7 +71,8 @@ function contentMenu() {
                 border-radius:10px;
                 background-color:#00B900;
                 border:none;
-                color:#ffffff;`} style={{ zIndex: 1 }}><BsLine className={css`margin-right:10px;  `} />เป็นเพื่อนกับเรา Add Friends</Button>
+                color:#ffffff;
+                margin: 15px 0;`} style={{ zIndex: 1 }}><BsLine className={css`margin-right:10px;  `} />เป็นเพื่อนกับเรา Add Friends</Button>
                 </Col>
             </Row>
         </>

@@ -29,8 +29,15 @@
 
 .navbar {
     background-color: rgb(59, 86, 160);
-    /* backdrop-filter: blur(5px); */
+    backdrop-filter: blur(5px);
 
+}
+
+.nav-bg-color {
+    background-color: rgb(59, 86, 160);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
 }
 
 .btn-size {
@@ -42,7 +49,7 @@
 .card-icon-out {
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
+
 }
 
 .card-icon-container {

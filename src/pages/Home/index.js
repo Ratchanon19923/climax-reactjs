@@ -19,7 +19,7 @@ function Home() {
         />
         <Row justify="center" align="middle" className='mt-3'>
           <Col xs={22} lg={10} xl={10} justify="center" align="middle" ><CarouselCard /></Col>
-          <div className='mb mt-5'>
+          <div className='mb mt-4'>
             <div className="d-flex align-items-center">
               <a
                 href="https://game.climax168.com/login"
@@ -37,7 +37,7 @@ function Home() {
               </a>
             </div>
           </div>
-          <Col xs={22} lg={8} xl={8} className="mb-5" justify="center" align="middle"><ContentMenu /></Col>
+          <Col xs={22} lg={8} xl={8} className="mb-3" justify="center" align="middle"><ContentMenu /></Col>
         </Row>
 
       </div>
