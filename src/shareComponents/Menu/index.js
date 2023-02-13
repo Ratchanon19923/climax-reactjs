@@ -15,14 +15,14 @@ import BarContact from "../../assets/images/barContact.png"
 
 function Menu({ isOpen, onChange }) {
     const items = [
-        { itemText: "เล่นเกม", itemLink: "/", itemIcon: BarGame },
+        { itemText: "เล่นเกม", itemLink: "https://game.climax168.com/login", itemIcon: BarGame },
         // { itemText: "ฝากเงิน", itemLink: "/" },
         // { itemText: "ถอนเงิน", itemLink: "/" },
-        { itemText: "รับเงินคืน", itemLink: "/", itemIcon: BarMoneyback },
-        { itemText: "ประวัติทำรายการ", itemLink: "/", itemIcon: BarHistory },
-        { itemText: "โปรโมชั่น", itemLink: "/", itemIcon: BarPromotion },
-        { itemText: "ข้อมูลพันธมิตร", itemLink: "/", itemIcon: BarAlliance },
-        { itemText: "ติดต่อเรา", itemLink: "/", itemIcon: BarContact },
+        { itemText: "รับเงินคืน", itemLink: "https://game.climax168.com/login", itemIcon: BarMoneyback },
+        { itemText: "ประวัติทำรายการ", itemLink: "https://game.climax168.com/login", itemIcon: BarHistory },
+        { itemText: "โปรโมชั่น", itemLink: "https://game.climax168.com/login", itemIcon: BarPromotion },
+        { itemText: "ข้อมูลพันธมิตร", itemLink: "https://game.climax168.com/login", itemIcon: BarAlliance },
+        { itemText: "ติดต่อเรา", itemLink: "https://game.climax168.com/login", itemIcon: BarContact },
 
     ]
     return (

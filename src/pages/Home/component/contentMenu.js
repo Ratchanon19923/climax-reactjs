@@ -14,7 +14,7 @@ function contentMenu() {
         <>
             <Row justify="center" align="middle">
                 <Col span={21}>
-                    <a href="/" >
+                    <a href="https://game.climax168.com/login" >
                         <img src={menuGame} className={css`width:100% ; 
                         &:hover,
                         :focus {
@@ -34,7 +34,7 @@ function contentMenu() {
                     </a>
                 </Col>
                 <Col span={11}>
-                    <a href="/">
+                    <a href="https://game.climax168.com/login">
                         <img src={menuSport} className={css`width:100% ; 
                         &:hover,
                         :focus {
@@ -44,7 +44,7 @@ function contentMenu() {
                     </a>
                 </Col>
                 <Col span={11}>
-                    <a href="/">
+                    <a href="https://game.climax168.com/login">
                         <img src={menuCasino} className={css`width:100% ; 
                         &:hover,
                         :focus {
@@ -54,7 +54,7 @@ function contentMenu() {
                     </a>
                 </Col>
                 <Col span={11}>
-                    <a href="/">
+                    <a href="https://game.climax168.com/login">
                         <img src={menuLotto} className={css`width:100% ; 
                         &:hover,
                         :focus {
@@ -66,13 +66,7 @@ function contentMenu() {
 
                 <Col span={21}>
                     <Button
-                        className={css`width:100%;
-                        height:50px;  
-                border-radius:10px;
-                background-color:#00B900;
-                border:none;
-                color:#ffffff;
-                margin: 15px 0;`} style={{ zIndex: 1 }}><BsLine className={css`margin-right:10px;  `} />เป็นเพื่อนกับเรา Add Friends</Button>
+                        className="btn-line" style={{ zIndex: 1 }}><BsLine className={css`margin-right:10px;  `} />เป็นเพื่อนกับเรา Add Friends</Button>
                 </Col>
             </Row>
         </>
