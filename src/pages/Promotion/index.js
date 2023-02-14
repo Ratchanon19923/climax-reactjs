@@ -1,11 +1,78 @@
-import React from 'react'
-import Percent from "../../assets/images/percent.png"
-import { Col, Row } from 'antd';
+
+import React, { useEffect, useState } from 'react'
+import classNames from 'classnames'
 import { css } from '@emotion/css'
+import Percent from "../../assets/images/percent.png"
 import Promotion1 from '../../assets/images/promotion1.png'
 import Promotion2 from '../../assets/images/promotion2.png'
 
-function index() {
+export default function PromotionPage() {
+
+    const [bannerPromotionList, setBannerPromotionList] = useState([])
+    const [bannerPromotion, setBannerPromotion] = useState([])
+    const [proType, setProType] = useState('all')
+
+    const bannerPro = [
+        {
+            imageUrl: Promotion1,
+            type: 'casino'
+        },
+        {
+            imageUrl: Promotion1,
+            type: 'casino'
+        },
+        {
+            imageUrl: Promotion1,
+            type: 'casino'
+        },
+        {
+            imageUrl: Promotion2,
+            type: 'sport'
+        },
+        {
+            imageUrl: Promotion2,
+            type: 'sport'
+        },
+        {
+            imageUrl: Promotion2,
+            type: 'sport'
+        },
+        {
+            imageUrl: Promotion1,
+            type: 'slot'
+        },
+        {
+            imageUrl: Promotion1,
+            type: 'slot'
+        },
+        {
+            imageUrl: Promotion1,
+            type: 'slot'
+        },
+
+        {
+            imageUrl: Promotion2,
+            type: 'lotto'
+        },
+
+    ]
+
+    useEffect(() => {
+        setBannerPromotionList(bannerPro)
+        setBannerPromotion(bannerPro)
+    }, [])
+
+    const updatePromotion = (proType) => {
+        const promotionFilter = bannerPromotionList.filter(i => i.type === proType)
+        setBannerPromotion(promotionFilter)
+        setProType(proType);
+    }
+
+    const updatePromotionAll = (proType) => {
+        setBannerPromotion(bannerPromotionList)
+        setProType(proType);
+    }
+
     return (
         <>
             <div className='promotion-bg-image'>
@@ -26,44 +93,54 @@ function index() {
                     </div>
 
                 </div>
-                <div className="nav-con">
-                    <a className="nav-text nav-link" href="/">ทั้งหมด</a>
-                    <a className="nav-text nav-link" href="/">กีฬา</a>
-                    <a className="nav-text nav-link" href="/">คาสิโน</a>
-                    <a className="nav-text nav-link" href="/">สล็อต</a>
-                    <a className="nav-text nav-link" href="/">หวย</a>
+                <div className="seesion-title-catgory">
+                    <div className={classNames('pro-item', {
+                        'active-promotion-category': proType === 'all'
+                    })} onClick={() => {
+                        updatePromotionAll('all');
+                    }}>
+                        <p className='mb-0'>ทั้งหมด</p>
+                    </div>
+                    <div className={classNames('pro-item', {
+                        'active-promotion-category': proType === 'sport'
+                    })} onClick={() => {
+                        updatePromotion('sport');
+                    }}>
+                        <p className='mb-0'>กีฬา</p>
+                    </div>
+                    <div className={classNames('pro-item', {
+                        'active-promotion-category': proType === 'casino'
+                    })} onClick={() => {
+                        updatePromotion('casino');
+                    }}>
+                        <p className='mb-0'>คาสิโน</p>
+                    </div>
+                    <div className={classNames('pro-item', {
+                        'active-promotion-category': proType === 'slot'
+                    })} onClick={() => {
+                        updatePromotion('slot');
+                    }}>
+                        <p className='mb-0'>สล็อต</p>
+                    </div>
+                    <div className={classNames('pro-item', {
+                        'active-promotion-category': proType === 'lotto'
+                    })} onClick={() => {
+                        updatePromotion('lotto');
+                    }}>
+                        <p className='mb-0'>หวย</p>
+                    </div>
                 </div>
-                <Row justify="center" align="middle" style={{ zIndex: 1 }}>
-                    <Col xs={18} sm={15} lg={8} xl={6}>
-                        <a href="/">
-                            <img src={Promotion1} className={css`width:100%;  `} alt="..." />
-                        </a>
-                    </Col>
-                    <Col xs={18} sm={15} lg={8} xl={6}>
-                        <a href="/">
-                            <img src={Promotion2} className={css`width:100%;  `} alt="..." />
-                        </a>
-                    </Col>
-                </Row>
-                <Row justify="center" align="middle" className="mb-5" >
-                    <Col xs={18} sm={15} lg={8} xl={6}>
-                        <a href="/">
-                            <img src={Promotion1} className={css`width:100%;  `} alt="..." />
-                        </a>
-                    </Col>
-                    <Col xs={18} sm={15} lg={8} xl={6}>
-                        <a href="/">
-                            <img src={Promotion2} className={css`width:100%;`} alt="..." />
-                        </a>
-                    </Col>
-                </Row>
+                <div className="session-banner-promotion">
+                    {bannerPromotion.map((row, index) => (
+                        <div className="box-banner-promotion" key={index}>
+                            <a href="https://game.ryder365.com/">
+                                <img src={row.imageUrl} draggable={false} className='w-100' alt={row.type} />
+                            </a>
+                        </div>
+                    ))}
+                </div>
             </div>
-
-
-
 
         </>
     )
 }
-
-export default index

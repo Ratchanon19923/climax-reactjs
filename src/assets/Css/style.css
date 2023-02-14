@@ -161,40 +161,46 @@
     width: 40px;
 }
 
-.nav-con {
+
+.seesion-title-catgory {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #0000005b;
-    opacity: 0.8;
-    width: 50%;
-    height: 40px;
-    margin: 5px auto 20px auto;
+    height: 50px;
+    width: 65%;
     border-radius: 10px;
+    margin: 5px auto 20px auto;
+    margin-bottom: 23px;
+    background-color: #0000005b;
 }
 
-.nav-text {
-    text-decoration: none;
+.seesion-title-catgory p {
     color: #fff;
+    text-decoration: none;
     font-size: 20px;
-    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.session-banner-promotion {
+    text-align: center;
+}
+
+.box-banner-promotion {
+    display: inline-block;
+    width: 32%;
+    margin: 0 20px 30px 20px;
+}
+
+.box-banner-promotion img {
+    border-radius: 14px;
+}
+
+.active-promotion-category p {
+    color: white !important;
 }
 
 
 /* -------------------------- End Promotion --------------------------  */
-@media screen and (max-width:1200px) {
-    .nav-con {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #0000005b;
-        opacity: 0.8;
-        width: 70%;
-        height: 40px;
-        margin: 5px auto 20px auto;
-        border-radius: 10px;
-    }
-}
 
 @media screen and (max-width:990px) {
     .pc {
@@ -238,17 +244,6 @@
         overflow: hidden;
     }
 
-    .nav-con {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #0000005b;
-        opacity: 0.8;
-        width: 65%;
-        height: 40px;
-        margin: 5px auto 20px auto;
-        border-radius: 10px;
-    }
 
     .btn-line {
         width: 100%;
@@ -263,39 +258,51 @@
 }
 
 @media screen and (max-width:768px) {
-    .nav-con {
+    .seesion-title-catgory {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #0000005b;
-        opacity: 0.8;
-        width: 65%;
-        height: 40px;
-        margin: 5px auto 20px auto;
+        height: 45px;
+        width: 70%;
         border-radius: 10px;
+        margin: 5px auto 20px auto;
+        margin-bottom: 23px;
+        background-color: #0000005b;
     }
 
+    .seesion-title-catgory p {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .box-banner-promotion {
+        display: inline-block;
+        width: 60%;
+        margin: 0 30px 30px 30px;
+    }
 
 }
 
 @media screen and (max-width:576px) {
-    .nav-con {
+    .seesion-title-catgory {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #0000005b;
-        opacity: 0.8;
-        width: 80%;
-        height: 40px;
-        margin: 5px auto 20px auto;
+        height: 45px;
+        width: 70%;
         border-radius: 10px;
+        margin: 5px auto 20px auto;
+        margin-bottom: 23px;
+        background-color: #0000005b;
     }
 
-    .nav-text {
-        text-decoration: none;
+    .seesion-title-catgory p {
         color: #fff;
-        font-size: 18px;
-        padding: 8px 10px;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
     }
 
     .btn-line {
