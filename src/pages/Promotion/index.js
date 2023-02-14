@@ -9,7 +9,7 @@ export default function PromotionPage() {
 
     const [bannerPromotionList, setBannerPromotionList] = useState([])
     const [bannerPromotion, setBannerPromotion] = useState([])
-    const [bannerPro, setBannerPro] = useState([
+    const [bannerPro] = useState([
         {
             imageUrl: Promotion1,
             type: 'casino'
