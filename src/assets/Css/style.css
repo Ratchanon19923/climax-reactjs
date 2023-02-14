@@ -120,11 +120,13 @@
 
 .promotion-bg-image {
     background-image: url(../../../src/assets/images/bg-home.png);
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 /* -------------------------- End Home --------------------------  */
@@ -237,11 +239,13 @@
 
     .promotion-bg-image {
         background-image: url(../../../src/assets/images/bg-home.png);
-        height: auto;
+        height: 100%;
+        width: 100%;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: 100% 100%;
         overflow: hidden;
+        min-height: 100vh;
     }
 
 
@@ -279,7 +283,7 @@
 
     .box-banner-promotion {
         display: inline-block;
-        width: 60%;
+        width: 65%;
         margin: 0 30px 30px 30px;
     }
 
@@ -291,19 +295,19 @@
         justify-content: space-around;
         align-items: center;
         height: 45px;
-        width: 70%;
+        width: 75%;
         border-radius: 10px;
         margin: 5px auto 20px auto;
         margin-bottom: 23px;
         background-color: #0000005b;
     }
 
-    .seesion-title-catgory p {
-        color: #fff;
-        text-decoration: none;
-        font-size: 16px;
-        cursor: pointer;
+    .box-banner-promotion {
+        display: inline-block;
+        width: 70%;
+        margin: 0 30px 30px 30px;
     }
+
 
     .btn-line {
         width: 100%;
