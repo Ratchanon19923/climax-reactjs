@@ -59,9 +59,6 @@ function index() {
                 </Row>
             </div>
 
-
-
-
         </>
     )
 }

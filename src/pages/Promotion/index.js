@@ -1,6 +1,5 @@
 
 import React, { useEffect, useState } from 'react'
-import classNames from 'classnames'
 import { css } from '@emotion/css'
 import Percent from "../../assets/images/percent.png"
 import Promotion1 from '../../assets/images/promotion1.png'
@@ -10,9 +9,7 @@ export default function PromotionPage() {
 
     const [bannerPromotionList, setBannerPromotionList] = useState([])
     const [bannerPromotion, setBannerPromotion] = useState([])
-    const [proType, setProType] = useState('all')
-
-    const bannerPro = [
+    const [bannerPro, setBannerPro] = useState([
         {
             imageUrl: Promotion1,
             type: 'casino'
@@ -38,11 +35,11 @@ export default function PromotionPage() {
             type: 'sport'
         },
         {
-            imageUrl: Promotion1,
+            imageUrl: Promotion2,
             type: 'slot'
         },
         {
-            imageUrl: Promotion1,
+            imageUrl: Promotion2,
             type: 'slot'
         },
         {
@@ -55,23 +52,24 @@ export default function PromotionPage() {
             type: 'lotto'
         },
 
-    ]
+    ])
 
-    useEffect(() => {
-        setBannerPromotionList(bannerPro)
-        setBannerPromotion(bannerPro)
-    }, [])
 
     const updatePromotion = (proType) => {
         const promotionFilter = bannerPromotionList.filter(i => i.type === proType)
         setBannerPromotion(promotionFilter)
-        setProType(proType);
+        // setBannerPromotionList(bannerPro)
     }
 
-    const updatePromotionAll = (proType) => {
+    const updatePromotionAll = () => {
         setBannerPromotion(bannerPromotionList)
-        setProType(proType);
+        // setBannerPromotionList(bannerPro)
     }
+
+    useEffect(() => {
+        setBannerPromotion(bannerPro)
+        setBannerPromotionList(bannerPro);
+    }, [bannerPro])
 
     return (
         <>
@@ -94,39 +92,27 @@ export default function PromotionPage() {
 
                 </div>
                 <div className="seesion-title-catgory">
-                    <div className={classNames('pro-item', {
-                        'active-promotion-category': proType === 'all'
-                    })} onClick={() => {
+                    <div onClick={() => {
                         updatePromotionAll('all');
                     }}>
                         <p className='mb-0'>ทั้งหมด</p>
                     </div>
-                    <div className={classNames('pro-item', {
-                        'active-promotion-category': proType === 'sport'
-                    })} onClick={() => {
+                    <div onClick={() => {
                         updatePromotion('sport');
                     }}>
                         <p className='mb-0'>กีฬา</p>
                     </div>
-                    <div className={classNames('pro-item', {
-                        'active-promotion-category': proType === 'casino'
-                    })} onClick={() => {
+                    <div onClick={() => {
                         updatePromotion('casino');
                     }}>
                         <p className='mb-0'>คาสิโน</p>
                     </div>
-                    <div className={classNames('pro-item', {
-                        'active-promotion-category': proType === 'slot'
-                    })} onClick={() => {
+                    <div onClick={() => {
                         updatePromotion('slot');
                     }}>
                         <p className='mb-0'>สล็อต</p>
                     </div>
-                    <div className={classNames('pro-item', {
-                        'active-promotion-category': proType === 'lotto'
-                    })} onClick={() => {
-                        updatePromotion('lotto');
-                    }}>
+                    <div onClick={() => { updatePromotion('lotto'); }}>
                         <p className='mb-0'>หวย</p>
                     </div>
                 </div>
