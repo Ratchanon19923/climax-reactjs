@@ -13,7 +13,7 @@ function contentMenu() {
     return (
         <>
             <Row justify="center" align="middle">
-                <Col span={21}>
+                <Col span={22}>
                     <a href="https://game.climax168.com/login" >
                         <img src={menuGame} className={css`width:100% ; 
                         &:hover,
@@ -66,7 +66,7 @@ function contentMenu() {
 
                 <Col span={21}>
                     <Button
-                        className="btn-line" style={{ zIndex: 1 }}><BsLine className={css`margin-right:10px;  `} />เป็นเพื่อนกับเรา Add Friends</Button>
+                        className="btn-line" style={{ zIndex: 1 }}><BsLine className={css`margin-right:10px;`} />เป็นเพื่อนกับเรา Add Friends</Button>
                 </Col>
             </Row>
         </>

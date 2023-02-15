@@ -13,12 +13,12 @@ function Home() {
           closable
           message={
             <Marquee pauseOnHover gradient={false} speed="50" >
-              I can be a React component, multiple React components, or just some text.
+              ยินดีต้อนรับสู่ CliMax168 เล่นสล็อตวันนี้ รับโบนัสเพิ่มทันที 50%.
             </Marquee>
           }
         />
         <Row justify="center" align="middle" className='mt-3'>
-          <Col xs={22} lg={10} xl={10} justify="center" align="middle" ><CarouselCard /></Col>
+          <Col xs={20} lg={10} xl={10} justify="center" align="middle" ><CarouselCard /></Col>
           <div className='mb mt-4'>
             <div className="d-flex align-items-center">
               <a
@@ -37,7 +37,7 @@ function Home() {
               </a>
             </div>
           </div>
-          <Col xs={22} lg={8} xl={8} className="mb-3" justify="center" align="middle"><ContentMenu /></Col>
+          <Col xs={21} lg={8} xl={8} className="mb-3" justify="center" align="middle"><ContentMenu /></Col>
         </Row>
 
       </div>
